@@ -1,0 +1,22 @@
+function checkprime(num){
+let factor=0;
+for(i=1;i<=num;i++){
+  if(num%i==0){
+    factor++
+  }
+}
+  if(factor==2){
+  return true
+}else{
+    return false
+}
+  
+}
+  
+for(j=2;j<=15;j++){
+  if(checkprime(j)==true){
+     console.log(j,"prime number");
+  }else{
+    console.log(j,"not a prime number");
+  }
+}
